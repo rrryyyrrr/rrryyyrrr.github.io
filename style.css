@@ -28,13 +28,13 @@ body {
         見出し（文字幅に合わせた帯）
 -------------------- */
 h1, h2, h3 {
-  display: inline-block;        /* 幅を文字に合わせる */
-  background-color: var(--theme-color); /* 緑の帯 */
-  color: #fff;                  /* 文字は白 */
-  padding: 0.3em 0.5em;         /* 上下左右の余白 */
+  display: inline-block;       /* 幅を文字に合わせる */
+  background-color: var(--theme-color);
+  color: #fff;
+  padding: 0.3em 0.6em;        /* 左右に余白を入れる */
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  border-radius: 5px;           /* 角を丸く */
+  border-radius: 5px;
 }
 
 /* --------------------
@@ -103,27 +103,4 @@ th {
 th, td {
   border: 1px solid #f0f0f0;
   padding: 0.5rem;
-}
-
-/* --------------------
-    プロフィール画像横並び
--------------------- */
-.profile-images {
-  display: flex;          /* 横並びにする */
-  align-items: flex-start; /* 高さを揃える */
-  gap: 10px;              /* 画像間の余白 */
-  margin-bottom: 1em;
-}
-
-.main-image {
-  width: 150px;           /* メイン画像のサイズ */
-  height: auto;
-  border-radius: 8px;
-}
-
-.sub-image {
-  width: 80px;           /* サブ画像のサイズ */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
