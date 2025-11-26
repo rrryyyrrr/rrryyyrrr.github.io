@@ -108,19 +108,21 @@ th, td {
 -------------------- */
 .profile-images {
   display: flex;          /* 横並びにする */
-  align-items: center;    /* 高さ中央揃え */
+  align-items: flex-start; /* 高さを揃える */
   gap: 10px;              /* 画像間の余白 */
+  flex-wrap: wrap;        /* 画面幅が狭い場合は折り返す */
   margin-bottom: 1em;
 }
 
 .main-image {
-  width: 200px;
+  width: 150px;           /* 小さめに調整 */
   height: auto;
   border-radius: 8px;
 }
 
 .sub-image {
-  width: 80px;           /* 小さい画像のサイズ */
+  width: 100px;           /* サブ画像も小さく */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
