@@ -28,12 +28,9 @@ body {
 -------------------- */
 
 h1, h2, h3 {
-  position: relative; /* 擬似要素を位置付けるため */
-  color: white; /* 帯の文字色を白に */
-  border-bottom: dashed 0.1em var(--theme-color); /* 点線は残す */
-  display: inline-block; /* 幅を文字の長さに合わせる */
-  padding: 0.2em 0.5em; /* 帯内の余白 */
-  background-color: var(--theme-color); /* 濃い緑の帯 */
+  color: var(--theme-color); /* 濃い緑 */
+  border-bottom: dashed 0.1em var(--theme-color);
+}
 
 /* --------------------
         リンク
