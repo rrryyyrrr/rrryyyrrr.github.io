@@ -25,7 +25,7 @@ body {
 }
 
 /* --------------------
-        見出し
+        見出し（文字幅に合わせた帯）
 -------------------- */
 h1, h2, h3 {
   display: inline-block;        /* 幅を文字に合わせる */
@@ -36,6 +36,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
   border-radius: 5px;           /* 角を丸く */
 }
+
 /* --------------------
         リンク
 -------------------- */
@@ -104,3 +105,25 @@ th, td {
   padding: 0.5rem;
 }
 
+/* --------------------
+    プロフィール画像横並び
+-------------------- */
+.profile-images {
+  display: flex;          /* 横並びにする */
+  align-items: flex-start; /* 高さを揃える */
+  gap: 10px;              /* 画像間の余白 */
+  margin-bottom: 1em;
+}
+
+.main-image {
+  width: 150px;           /* メイン画像のサイズ */
+  height: auto;
+  border-radius: 8px;
+}
+
+.sub-image {
+  width: 80px;           /* サブ画像のサイズ */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
