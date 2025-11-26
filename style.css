@@ -1,7 +1,6 @@
 /* --------------------
         全体
 -------------------- */
-
 :root {
   --theme-color: #00a0a0;
 }
@@ -17,61 +16,90 @@ html, body {
 
 body {
   margin: 0;
-  padding: 30px;
+  padding: 15px 20px; /* 余白をスッキリ */
   color: #333;
+  background: linear-gradient(to bottom, #f0faff, #ffffff);
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* --------------------
         見出し
 -------------------- */
-
 h1, h2, h3 {
   color: var(--theme-color);
   border-bottom: dashed 0.1em var(--theme-color);
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 /* --------------------
         リンク
 -------------------- */
-
 a {
   color: var(--theme-color);
   text-decoration: none;
 }
 
+a:hover {
+  color: #007070;
+  text-decoration: underline;
+}
+
 /* --------------------
         リスト
 -------------------- */
-
 ul {
   list-style: none;
+  padding-left: 0;
 }
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
 li:before {
   content: "★";
   color: var(--theme-color);
+  margin-right: 5px;
 }
 
 /* --------------------
           表
 -------------------- */
-
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  border: solid 1px #f0f0f0;
+  border: 1px solid #f0f0f0;
   min-width: 70%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
+
 tr {
   background-color: #fff;
 }
+
 tr:nth-child(2n) {
   background-color: #f9f9f9;
 }
+
+tr:hover {
+  background-color: #e0f7f7;
+}
+
 th {
   background: var(--theme-color);
   color: #fff;
+  text-align: left;
 }
+
 th, td {
-  border: solid 1px #f0f0f0;
+  border: 1px solid #f0f0f0;
   padding: 0.5rem;
 }
+
