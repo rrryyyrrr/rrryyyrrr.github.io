@@ -1,8 +1,10 @@
 /* --------------------
         全体
 -------------------- */
+
 :root {
-  --theme-color: #006400; /* 濃い緑 */
+  --theme-color: #008000; /* 濃い緑 */
+  --bg-color: #e0f7e0;    /* 薄い緑 */
 }
 
 * {
@@ -16,91 +18,62 @@ html, body {
 
 body {
   margin: 0;
-  padding: 15px 20px;        /* ページ全体の余白 */
+  padding: 30px;
   color: #333;
-  background: #d8f0d8;       /* 薄い緑の背景 */
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  background-color: var(--bg-color); /* 背景を薄い緑に */
 }
 
 /* --------------------
-        見出し（文字幅に合わせた帯）
+        見出し
 -------------------- */
+
 h1, h2, h3 {
-  display: inline-block;       /* 幅を文字に合わせる */
-  background-color: var(--theme-color);
-  color: #fff;
-  padding: 0.3em 0.6em;        /* 左右に余白を入れる */
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
+  color: var(--theme-color); /* 濃い緑 */
+  border-bottom: dashed 0.1em var(--theme-color);
 }
 
 /* --------------------
         リンク
 -------------------- */
-a {
-  color: var(--theme-color);
-  text-decoration: none;
-}
 
-a:hover {
-  color: #004d00; /* 濃い緑に変化 */
-  text-decoration: underline;
+a {
+  color: var(--theme-color); /* 濃い緑 */
+  text-decoration: none;
 }
 
 /* --------------------
         リスト
 -------------------- */
+
 ul {
   list-style: none;
-  padding-left: 0;
 }
-
-li {
-  margin-bottom: 0.5em;
-  line-height: 1.5;
-}
-
 li:before {
   content: "★";
   color: var(--theme-color);
-  margin-right: 5px;
 }
 
 /* --------------------
-        表
+          表
 -------------------- */
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  border: 1px solid #f0f0f0;
+  border: solid 1px #f0f0f0;
   min-width: 70%;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
 }
-
 tr {
   background-color: #fff;
 }
-
 tr:nth-child(2n) {
   background-color: #f9f9f9;
 }
-
-tr:hover {
-  background-color: #e0f7f7;
-}
-
 th {
-  background: var(--theme-color);
+  background: var(--theme-color); /* 濃い緑 */
   color: #fff;
-  text-align: left;
 }
-
 th, td {
-  border: 1px solid #f0f0f0;
+  border: solid 1px #f0f0f0;
   padding: 0.5rem;
 }
