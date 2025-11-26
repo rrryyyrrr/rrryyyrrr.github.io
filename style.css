@@ -28,12 +28,13 @@ body {
         見出し
 -------------------- */
 h1, h2, h3 {
+  display: inline-block;        /* 幅を文字に合わせる */
   background-color: var(--theme-color); /* 緑の帯 */
-  color: #fff;                          /* 文字は白 */
-  padding: 0.3em 0.5em;                 /* 上下左右の余白 */
+  color: #fff;                  /* 文字は白 */
+  padding: 0.3em 0.5em;         /* 上下左右の余白 */
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  border-radius: 5px;                   /* 角を丸く */
+  border-radius: 5px;           /* 角を丸く */
 }
 /* --------------------
         リンク
