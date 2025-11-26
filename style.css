@@ -5,16 +5,28 @@
   --theme-color: #006400; /* 濃い緑 */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 15px 20px;
+  padding: 15px 20px;        /* ページ全体の余白 */
   color: #333;
-  background: #d8f0d8; /* 薄い緑 */
+  background: #d8f0d8;       /* 薄い緑の背景 */
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
+/* --------------------
+        見出し
+-------------------- */
 h1, h2, h3 {
   color: var(--theme-color);
   border-bottom: dashed 0.1em var(--theme-color);
@@ -22,3 +34,93 @@ h1, h2, h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
+
+/* --------------------
+        リンク
+-------------------- */
+a {
+  color: var(--theme-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004d00; /* 濃い緑に変化 */
+  text-decoration: underline;
+}
+
+/* --------------------
+        リスト
+-------------------- */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+li:before {
+  content: "★";
+  color: var(--theme-color);
+  margin-right: 5px;
+}
+
+/* --------------------
+        表
+-------------------- */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #f0f0f0;
+  min-width: 70%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+tr {
+  background-color: #fff;
+}
+
+tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e0f7f7;
+}
+
+th {
+  background: var(--theme-color);
+  color: #fff;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #f0f0f0;
+  padding: 0.5rem;
+}
+
+/* --------------------
+    プロフィール画像横並び
+-------------------- */
+.profile-images {
+  display: flex;          /* 横並びにする */
+  align-items: center;    /* 高さ中央揃え */
+  gap: 10px;              /* 画像間の余白 */
+  margin-bottom: 1em;
+}
+
+.main-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sub-image {
+  width: 80px;           /* 小さい画像のサイズ */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
